@@ -69,9 +69,10 @@ nav h1 a {
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 22px;
+    font-weight: bold;
     margin: 0;
-    width: calc(50% - 80px);
+    width: calc(100% - 80px); 
 }
 
 /* Display list items side by side */
@@ -88,7 +89,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: orange;
     text-decoration: none;
 }
 
@@ -106,9 +107,10 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: #3397DB;
   align-items: center;
+  padding: 1em 0;
 }
 .filter-options h2 {
   color: white;
@@ -134,7 +136,7 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 10px 5px 20px;
   text-align: center;
 }
 #restaurants-list li {
@@ -143,9 +145,12 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 0 1.5em 1em;
   text-align: left;
-  width: 270px;
+  width: 75%;
+  max-width: 450px;
+  display: inline-block;
+  align-items: center;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -170,7 +175,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #ffa500;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -190,27 +195,27 @@ nav h1 a {
   z-index: 1000;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
+  background: #ccc none repeat scroll 0 0;
   height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  width: 100%;
+  margin-top: 12em;
 }
 .inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
+  background-color: #0050B2;
+  padding: 12.5% 12.5%;
+  height: 75%;
+  width: 75%;
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 2em;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
@@ -239,7 +244,7 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  padding: 1em 40px 30px;
   width: 50%;
 }
 #reviews-container {
